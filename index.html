@@ -122,15 +122,17 @@
         </div>
         <script>
             function buy() {
+            let name = prompt ("What your name?");
             let country = prompt("What is your country?");
-
+                alert ("Hello," + name + "!");
             if(country === "France" || country === "france"){
-                    alert ("Go to the website https://www.jeep.fr/");
+                    
+                    window.location.href = "https://www.jeep.fr/";
                 }else{
                     if(country === "Germany" || country === "gremany"){
-                        alert ( "Go to the website https://www.jeep.de/");
+                        window.location.href = "https://www.jeep.de/";
                     }else{
-                        alert ("Go to the website https://www.jeep.com/");
+                        window.location.href =  "https://www.jeep.com/";
                     }
                     
                 }
