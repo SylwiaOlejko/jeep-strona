@@ -121,12 +121,21 @@
         </div>
         <script>
             function buy() {
-            let name = prompt("What is your name?");
-            let email = prompt("What is your email address?");
+            let country = prompt("What is your country?");
 
-            alert("Thank you, " + name + "! We'll be in touch by email! ");
+            if(country === "France" || country === "france"){
+                    alert ("Go to the website https://www.jeep.fr/");
+                }else{
+                    if(country === "Germany" || country === "gremany"){
+                        alert ( "Go to the website https://www.jeep.de/");
+                    }else{
+                        alert ("Go to the website https://www.jeep.com/");
+                    }
+                    
+                }
+              
             }
-
+            
             let buyButton = document.querySelector(".buy-button");
             buyButton.addEventListener("click", buy);
         </script>
